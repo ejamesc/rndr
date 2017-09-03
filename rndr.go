@@ -81,7 +81,7 @@ func main() {
 	setupRouters()
 
 	fmt.Fprintln(os.Stderr, "~~|| RNDR // https://github.com/ejamesc/rndr ||~~")
-	log.Printf("watching templates at: %s", templatesPath)
+	log.Printf("watching templates at: %s\n", templatesPath)
 	log.Println("listening on port " + portNum)
 	http.ListenAndServe(":"+portNum, switcher)
 }
