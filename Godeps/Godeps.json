@@ -1,0 +1,14 @@
+{
+	"ImportPath": "github.com/ejamesc/rndr",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/unrolled/render",
+			"Rev": "198ad4d8b8a4612176b804ca10555b222a086b40"
+		}
+	]
+}
