@@ -1,8 +1,8 @@
 # rndr
 
 rndr serves templates that are rendered using
-https://github.com/unrolled/render. I mostly use it when I need to quickly
-prototype something, to be used in a Go webapp.
+https://github.com/unrolled/render. I mostly use it when I'm designing
+templates for my Go webapps.
 
 Installation: 
 
@@ -18,6 +18,6 @@ rndr -t <templates directory> -s <static directory>
 
 For more instructions just run `rndr`.
 
-Typical workflow: point this to a repo of templates, and point the static
-folder to the static folder of my actual webapp. rndr is set to reload
+Typical workflow: point this to a directory of templates, and point the static
+flag to the static directory of my actual webapp. rndr is set to reload
 templates for each request.
