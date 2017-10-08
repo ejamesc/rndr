@@ -59,12 +59,6 @@ The options are:
 	}
 
 	switcher = HandlerSwitch{}
-	rndr = render.New(render.Options{
-		Directory:     templatesPath,
-		Extensions:    []string{".html"},
-		Layout:        "base",
-		IsDevelopment: true,
-	})
 }
 
 func main() {
@@ -79,6 +73,12 @@ func main() {
 	}
 
 	setupRouters()
+	rndr = render.New(render.Options{
+		Directory:     templatesPath,
+		Extensions:    []string{".html"},
+		Layout:        "base",
+		IsDevelopment: true,
+	})
 
 	fmt.Fprintln(os.Stderr, "~~|| RNDR // https://github.com/ejamesc/rndr ||~~")
 	log.Printf("watching templates at: %s\n", templatesPath)
